@@ -1,0 +1,17 @@
+<section class="todo-item" *ngFor="let item of itemsList">
+  <div
+    class="item-description"
+    (click)="onDone(item)"
+    [ngClass]="item.done ? 'done' : ''"
+  >
+    {{ item.description }}
+  </div>
+  <button
+    class="btn-delete"
+    mat-raised-button
+    color="accent"
+    (click)="onDeleteItem(item)"
+  >
+    Delete
+  </button>
+</section>

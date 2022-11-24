@@ -1,0 +1,16 @@
+<section class="todo-wrapper">
+  <form class="input-form">
+    <mat-form-field class="input-full-width">
+      <mat-label>Add ToDo</mat-label>
+      <input matInput placeholder="Enter here" #inputValue />
+    </mat-form-field>
+  </form>
+  <button
+    class="add-button"
+    mat-raised-button
+    color="primary"
+    (click)="onAddToDo(inputValue)"
+  >
+    Add
+  </button>
+</section>

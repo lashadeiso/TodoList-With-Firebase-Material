@@ -1,0 +1,23 @@
+.todo-item {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  justify-content: space-between;
+  border: 1px solid rgb(211, 210, 210);
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.todo-item:hover {
+  scale: 1.1;
+}
+.done {
+  background-color: rgb(159, 189, 159);
+}
+.item-description {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 80%;
+}
